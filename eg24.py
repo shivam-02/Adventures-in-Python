@@ -1,0 +1,6 @@
+a=input("Enter a number")
+b=input("Enter another number")
+c=int(a)+int(b)
+print("Total of {} and {} is {}".format(a,b,c))
+print(type(c))
+print(type(int))
