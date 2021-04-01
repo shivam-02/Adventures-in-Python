@@ -1,5 +1,5 @@
 class TMRange:
-  def __init__(k,start,end,step=1):
+  def __init__(k,end,start=1,step=1):
     k.start=start
     k.current=k.start
     k.end=end
@@ -13,13 +13,13 @@ class TMRange:
     return k
 
   def __next__(k):
-    if k.current>k.end: raise StopIteration
+    if k.current>k.end: raise StopIteration("Iteration end")
     data=k.current
     k.current=k.current+k.step
     return data
 
 
-myrange=TMRange(1,5)
+myrange=TMRange(5)
 print(myrange)
 
 for u in myrange:

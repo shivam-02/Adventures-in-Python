@@ -1,0 +1,12 @@
+a=range(1,5)
+k=a.__iter__()
+print(type(k))
+
+print(k.__next__())
+print(k.__next__())
+print(k.__next__())
+print(k.__next__())
+print(k.__next__())
+print(k.__next__())
+print(k.__next__())
+print(k.__next__())
